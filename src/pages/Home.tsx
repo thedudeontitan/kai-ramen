@@ -1,4 +1,5 @@
 import Marquee from "../components/marqee/Marquee";
+import Specialities from "./Specialities";
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
         </div>
       </div>
       <Marquee text="Sushi Sashimi Ramen Tempura Udon Yakitori Okonomiyaki Takoyaki Soba Tonkatsu Miso Soup Gyoza Donburi Sukiyaki Yakiniku Mochi Taiyaki Matcha Ice Cream Mentaiko Karaage Shabu-Shabu"/>
+      <Specialities/>
     </div>
   );
 }
