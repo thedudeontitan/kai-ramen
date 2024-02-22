@@ -1,25 +1,33 @@
-import React from 'react'
+import { CiShoppingBasket } from "react-icons/ci";
+import { FiUser } from "react-icons/fi";
+import { Link, Outlet } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <div className='fixed flex flex-row justify-between top-0 left-0 right-0 bg-[#F3EDE1] p-8 px-16 border-b border-[#333F72] border-opacity-30'>
+    <nav className="fixed flex flex-row justify-between top-0 left-0 right-0 bg-[#F3EDE1] p-8 px-16 border-b border-[#333F72] border-opacity-30">
+      <div>
+        <Link to="/">Kai Ramen</Link>
+      </div>
+      <ul className="flex flex-row gap-14">
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/">Menu</Link>
+        </li>
+        <li>
+          <Link to="/">About</Link>
+        </li>
+      </ul>
+      <Outlet />
+      <div className="flex flex-row gap-10 text-2xl">
         <div>
-        Kai Ramen
+          <CiShoppingBasket />
         </div>
-        <div className='flex flex-row gap-10'>
-            <div>
-                Home
-            </div>
-            <div>
-                Menu
-            </div>
-            <div>
-                About
-            </div>
+        <div>
+          <FiUser />
         </div>
-        <div className='flex flex-row gap-10'>
-            <div></div>
-        </div>
-    </div>
-  )
+      </div>
+    </nav>
+  );
 }
