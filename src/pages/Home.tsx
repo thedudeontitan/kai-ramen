@@ -1,15 +1,16 @@
 import React from "react";
+import Marquee from "../components/marqee/Marquee";
 
 export default function Home() {
   return (
     <div className="">
-      <div className="flex flex-col justify-center items-center lg:pt-36 overflow-x-hidden">
+      <div className="flex flex-col justify-center items-center pt-36 overflow-x-hidden">
         <div className="absolute top-40 left-0 overflow-x-clip">
           <div className="-ml-16">
-            <img src="/bg_doodle.png" className="w-[50vh]" />
+            <img src="/bg_doodle.png" className="w-[60vh]" />
           </div>
         </div>
-        <div className="absolute top-60 right-0 overflow-x-hidden">
+        <div className="absolute top-80 right-0 overflow-x-hidden">
           <div className="-mr-10">
             <img src="/bg_doodle1.png" className="w-[50vh]" />
           </div>
@@ -29,6 +30,7 @@ export default function Home() {
           <img src="/hero_img.png" className="lg:w-[80vh]" />
         </div>
       </div>
+      <Marquee text="Sushi Sashimi Ramen Tempura Udon Yakitori Okonomiyaki Takoyaki Soba Tonkatsu Miso Soup Gyoza Donburi Sukiyaki Yakiniku Mochi Taiyaki Matcha Ice Cream Mentaiko Karaage Shabu-Shabu"/>
     </div>
   );
 }
