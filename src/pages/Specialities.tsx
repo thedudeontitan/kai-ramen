@@ -1,4 +1,3 @@
-import React from "react";
 import { SepcialtyItem, SepcialtyItemProps } from "../components/MenuItem";
 
 const items: SepcialtyItemProps[] = [
