@@ -1,4 +1,3 @@
-import React from "react";
 import Marquee from "../components/marqee/Marquee";
 
 export default function Home() {
