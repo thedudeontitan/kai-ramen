@@ -1,10 +1,11 @@
+import "../App.css";
 import { CiShoppingBasket } from "react-icons/ci";
 import { FiUser } from "react-icons/fi";
 import { Link, Outlet } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <nav className="fixed flex flex-row justify-between top-0 left-0 right-0 bg-[#F3EDE1] p-8 px-16 border-b border-[#333F72] border-opacity-30">
+    <nav className="z-20 fixed flex flex-row justify-between top-0 left-0 right-0 bg-[#F3EDE1] p-8 px-16 border-b border-[#333F72] border-opacity-30">
       <div>
         <Link to="/">Kai Ramen</Link>
       </div>
@@ -28,6 +29,8 @@ export default function Navbar() {
           <FiUser />
         </div>
       </div>
+      <div className="paperOverlay"></div>
+
     </nav>
   );
 }

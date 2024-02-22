@@ -6,15 +6,16 @@ import About from "./pages/About";
 
 function App() {
   return (
-    <div className="bg-[#F3EDE1] font-hiro-misake text-[#333F72]">
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
+      <div className="bg-[#F3EDE1] font-hiro-misake text-[#333F72] relative">
+        <BrowserRouter>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+        </BrowserRouter>
+        <div className="paperOverlay"></div>
+      </div>
   );
 }
 
