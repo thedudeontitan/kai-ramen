@@ -13,7 +13,10 @@ export default function Footer() {
     <div className="bg-[#333F72] bottom-0 left-0 right-0 z-20 text-white p-8 flex lg:flex-row flex-col justify-between gap-5">
       <p>Kai Ramen</p>
       <div className="flex flex-row gap-16 text-sm font-sans">
-        <p className="font-hiro-misake">Home</p>
+        <div className="flex flex-col gap-2">
+          <p className="font-hiro-misake">Home</p>
+          <Link to="">Specialties</Link>
+        </div>
         <div className="flex flex-col gap-2">
           <p className="font-hiro-misake">Menu</p>
           <Link to="">Sushi</Link>
