@@ -1,7 +1,7 @@
 import "../App.css";
 import { CiShoppingBasket } from "react-icons/ci";
 import { FiUser } from "react-icons/fi";
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -14,13 +14,12 @@ export default function Navbar() {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/">Menu</Link>
+          <a href="/home#menu">Menu</a>
         </li>
         <li>
-          <Link to="/">About</Link>
+          <Link to="/about">About</Link>
         </li>
       </ul>
-      <Outlet />
       <div className="flex flex-row gap-10 text-2xl">
         <div>
           <CiShoppingBasket />

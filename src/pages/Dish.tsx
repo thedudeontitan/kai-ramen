@@ -1,11 +1,16 @@
 import { useParams } from "react-router-dom";
 import { SepcialtyItems, menu } from "../models/menu";
+import { useEffect } from "react";
 
 export default function Dish() {
   const params = useParams();
   const { id } = params;
 
-  const itemId= id ? parseInt(id) - 1 : 0
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
+  const itemId = id ? parseInt(id) - 1 : 0;
   const filteredMenu = menu.filter((dish) => dish.id.toString() === id);
   return (
     <div className="flex lg:flex-row flex-col lg:pt-40 justify-center gap-x-20 pb-10">
@@ -17,9 +22,7 @@ export default function Dish() {
         />
         <div className="">
           <p className="text-3xl mt-2">{SepcialtyItems[itemId].name}</p>
-          <p className="w-[70vh] mt-2">
-            {SepcialtyItems[itemId].description}
-          </p>
+          <p className="w-[70vh] mt-2">{SepcialtyItems[itemId].description}</p>
         </div>
       </div>
       <div className="flex flex-col gap-4 lg:w-[70vh]">
