@@ -5,21 +5,20 @@ export default function Dish() {
   const params = useParams();
   const { id } = params;
 
+  const itemId= id ? parseInt(id) - 1 : 0
   const filteredMenu = menu.filter((dish) => dish.id.toString() === id);
   return (
     <div className="flex lg:flex-row flex-col lg:pt-40 justify-center gap-x-20 pb-10">
       <div className="flex flex-col">
         <img
-          src={SepcialtyItems[id ? parseInt(id) - 1 : 0].image}
+          src={SepcialtyItems[itemId].image}
           alt=""
           className="lg:w-[70vh]"
         />
         <div className="">
-          <p className="text-3xl mt-2">Sushi</p>
+          <p className="text-3xl mt-2">{SepcialtyItems[itemId].name}</p>
           <p className="w-[70vh] mt-2">
-            Sushi is a Japanese dish of vinegared rice combined with seafood,
-            vegetables, or fruits, wrapped in seaweed. Its delicate flavors and
-            elegant presentation make it a globally beloved culinary delight.
+            {SepcialtyItems[itemId].description}
           </p>
         </div>
       </div>
