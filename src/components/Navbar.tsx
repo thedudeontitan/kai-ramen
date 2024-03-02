@@ -33,7 +33,7 @@ export default function Navbar() {
         <div className="paperOverlay"></div>
       </nav>
       <nav className="lg:hidden">
-        <div className="fixed top-0 left-0 right-0 h-20 bg-[#F3EDE1] py-8 border-b border-[#333F72] border-opacity-30 z-10">
+        <div className="fixed top-0 left-0 right-0 h-20 bg-[#F3EDE1] p-8 border-b border-[#333F72] border-opacity-30 z-10">
           <Link to="/" className="text-xl">Kai Ramen</Link>
 
           <div className="paperOverlay"></div>

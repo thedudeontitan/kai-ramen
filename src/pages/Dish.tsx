@@ -13,16 +13,18 @@ export default function Dish() {
   const itemId = id ? parseInt(id) - 1 : 0;
   const filteredMenu = menu.filter((dish) => dish.id.toString() === id);
   return (
-    <div className="flex lg:flex-row flex-col lg:pt-40 justify-center gap-x-20 pb-10">
+    <div className="flex lg:flex-row flex-col pt-40 justify-center gap-x-20 pb-10 mx-4">
       <div className="flex flex-col">
+        <div className="border-2 border-[#333F72] p-4 h-fit rounded-tl-3xl rounded-br-3xl">
         <img
           src={SepcialtyItems[itemId].image}
           alt=""
-          className="lg:w-[70vh]"
+          className="lg:w-[70vh] object-contain"
         />
-        <div className="">
+        </div>
+        <div className="mb-5">
           <p className="text-3xl mt-2">{SepcialtyItems[itemId].name}</p>
-          <p className="w-[70vh] mt-2">{SepcialtyItems[itemId].description}</p>
+          <p className="lg:w-[70vh] mt-2">{SepcialtyItems[itemId].description}</p>
         </div>
       </div>
       <div className="flex flex-col gap-4 lg:w-[70vh]">
