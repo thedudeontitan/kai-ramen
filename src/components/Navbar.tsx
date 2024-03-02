@@ -16,7 +16,7 @@ export default function Navbar() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="/home#menu">Menu</a>
+            <a href="/#menu">Menu</a>
           </li>
           <li>
             <Link to="/about">About</Link>
@@ -41,7 +41,7 @@ export default function Navbar() {
         <div className="paperOverlay"></div>
       </div>
       <div className="lg:hidden fixed flex flex-row justify-around bottom-0 left-0 right-0 h-20 bg-[#F3EDE1] p-8 border-t border-[#333F72] border-opacity-30 z-10 text-3xl">
-        <Link to="/home#menu" className="">
+        <Link to="/#menu" className="">
           <GiKnifeFork />
         </Link>
         <Link to="/" className="">
