@@ -27,7 +27,7 @@ export default function About() {
         </div>
         <div className="border-2 border-[#333F72] p-4 lg:w-1/2 h-fit rounded-tl-3xl rounded-br-3xl">
           <img
-            src="public/restaurant.jpg"
+            src="/restaurant.jpg"
             alt=""
             className="object-cover rounded-tl-3xl rounded-br-3xl"
           />
@@ -36,7 +36,7 @@ export default function About() {
       <div className=" flex flex-col lg:flex-row gap-10 mt-20 items-center">
         <div className="border-2 border-[#333F72] p-4 lg:w-1/2 h-fit rounded-tl-3xl rounded-br-3xl">
           <img
-            src="public/team.jpg"
+            src="/team.jpg"
             alt=""
             className="object-cover rounded-tl-3xl rounded-br-3xl"
           />
