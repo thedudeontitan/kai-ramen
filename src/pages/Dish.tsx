@@ -43,8 +43,11 @@ export default function Dish() {
               <p className="text-xl ml-5">{dish.name}</p>
               <p className="text-2xl ml-5">${dish.cost}</p>
             </div>
-            <button className="bg-[#E56E0C] rounded-tl-3xl rounded-br-3xl text-white px-3 h-fit py-4 mt-auto ml-auto hover:bg-[#F3EDE1] border-2 border-[#E56E0C] hover:text-[#E56E0C] transition-all">
+            <button className="hidden lg:flex whitespace-nowrap bg-[#E56E0C] rounded-tl-3xl rounded-br-3xl text-white px-3 h-fit py-4 mt-auto ml-auto hover:bg-[#F3EDE1] border-2 border-[#E56E0C] hover:text-[#E56E0C] transition-all">
               Add to cart
+            </button>
+            <button className="flex lg:hidden whitespace-nowrap bg-[#E56E0C] rounded-tl-3xl rounded-br-3xl text-white px-3 h-fit py-4 mt-auto ml-auto hover:bg-[#F3EDE1] border-2 border-[#E56E0C] hover:text-[#E56E0C] transition-all">
+              Order
             </button>
           </div>
         ))}
